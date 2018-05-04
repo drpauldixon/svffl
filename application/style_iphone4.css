@@ -1,0 +1,363 @@
+body{
+  font-family: GillSans-Light;
+  font-size: 12px;
+  color: white;
+  background-color: transparent;
+  padding:0;
+  margin:0;
+}
+
+#backgroundImage{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 480px;
+  height: 1280px;
+  z-index: 0;
+  background-image: url('blue_texture.jpg');
+  background-size: 100%;
+}
+
+#nplayers{
+ font-size: 14px;
+}
+
+#control{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 480px;
+  height: 48px;
+  background-color: black;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 10;
+  -webkit-border-radius: 0px;
+  background: -webkit-linear-gradient(top, #222 0.0%, #222 50%, #111  50%, #111 95.0%, #777 100.0%);
+}
+
+#table-heading{
+  position: fixed;
+  left:0;
+  top: 48px;
+  width: 480px;
+  height: 36px;
+  color: white;
+  background-color: black;
+  z-index: 10;
+
+}
+
+.button{
+  border-radius: 12px;
+  font: HelveticaNeue;
+  font-size: 14px;
+  line-height: 350%;
+  font-weight: bold;
+}
+
+#gk{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+#fb{
+  position: absolute;
+  left: 48;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+}
+
+#cb{
+  position: absolute;
+  left: 96;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+}
+
+#mf{
+  position: absolute;
+  left: 144;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+}
+
+#st{
+  position: absolute;
+  left: 192;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+}
+
+#pts{
+  position: absolute;
+  left: 244;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+#clb{
+  position: absolute;
+  left: 292;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+}
+
+#prc{
+  position: absolute;
+  left: 340;
+  top: 0;
+  width: 48px;
+  height: 48px;
+}
+
+#team{
+  position: absolute;
+  left: 244;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+}
+
+#budget{
+  position: absolute;
+  left: 352;
+  top: 0;
+  width: 128px;
+  height: 48px;
+  background-color: transparent;
+  text-align: right;
+}
+
+#price-per-player{
+ position: absolute;
+ left:240px;
+ top: 32px;
+ width: 240px;
+ background-color: transparent;
+ font-height:8px;
+ text-align: right;
+}
+
+#buypanel{
+  position: fixed;
+  left: 0px;
+  top: -600px;
+  width: 480px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 25;
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.bp{
+  padding: 0;
+  margin: 0;
+  padding-left: 12px;
+  padding-top: 0.5em;
+}
+
+#buypanel h3{
+  padding-top:22px;
+}
+
+#buypanel input{
+  border: 1px solid white;
+  width: 20%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0.5em;
+}
+
+#button-confirm{
+  top: 200px;
+  position: absolute;
+  width: 64px;
+  height: 48px;
+  margin-left: 298px;
+  border-radius: 12px;
+  background-color: green;
+  border: 4px solid darkgreen;
+  color: white;
+      vertical-align: middle;
+      text-align: center;
+  font-weight: bold;
+}
+
+#button-cancel{
+  position: absolute;
+  top: 200px;
+  width: 64px;
+  height: 48px;
+  margin-left: 382px;
+  border-radius: 12px;
+  background-color: red;
+  color: white;
+  border: 4px solid darkred;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#debug{
+  position: absolute;
+  left: 0;
+  top: -1024;
+  width: 768px;
+  height: 64px;
+  background-color: yellow;
+  color: black;
+  z-index:2;
+}
+
+#content{
+  background-color: transparent;
+  position: relative;
+  width: 480px;
+  z-index: 1;
+  margin-top: 87px;
+}
+
+#reset{
+  width:200px;
+  margin:0px auto;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+}
+
+.total{
+ font-weight: bold;
+}
+
+.refresh{
+ font-weight: bold;
+ background-color: rgba(0, 0, 255, 0.2);
+}
+
+.finished{
+ vertical-align: sub;
+ font-size:75%;
+}
+
+.remaining{
+ vertical-align: sub;
+ font-size:60%;
+}
+
+th,td{
+  border: 1px solid white;
+  text-align: center;
+}
+
+
+table{
+  border-collapse: collapse;
+  line-height: 200%;
+}
+
+tr.odd{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+tr.even{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* ... Table headings ... */
+.position{
+ width: 35px;
+ overflow: hidden;
+}
+
+.name{
+  text-align: left;
+  padding-left: 0.25em;
+  width: 117px;
+ overflow: hidden;
+}
+
+.club{
+  width: 54px;
+ overflow: hidden;
+}
+
+.played{
+  width: 45px;
+ overflow: hidden;
+}
+
+.goals{
+  width: 45px;
+ overflow: hidden;
+}
+
+.price{
+  width: 50px;
+ overflow: hidden;
+}
+
+.points{
+  width: 45px;
+ overflow: hidden;
+}
+
+.actions{
+ width: 69px;
+ overflow: hidden;
+}
+
+.mark{
+  width: 24px;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  font-weight: bold;
+ overflow: hidden;
+}
+
+.buy{
+  width: 34px;
+  background-color: rgba(0, 255, 0, 0.4);
+  color: white;
+  font-weight: bold;
+}
+
+
+/* Table heading text */
+.ht-position:before { content: "Pos"; }
+.ht-name:before { content: "Name"; }
+.ht-club:before { content: "Club"; }
+.ht-played:before { content: "Pl"; }
+.ht-goals:before { content: "Gl"; }
+.ht-price:before { content: "£M"; }
+.ht-points:before { content: "Pts"; }
+.ht-actions:before { content: "Act"; }
+
+
+/* Budget label */
+.budget-text:before { content: "Budget: "; }
+
